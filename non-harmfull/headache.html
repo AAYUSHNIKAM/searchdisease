@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <link rel="stylesheet" href="headache.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <nav class="sidebar">
+          <!-- <div class="logo"><img src="logo/logo.png" alt=""></div> -->
+          <div onclick=hidesidebar()><img src="cross.png" alt=""></div>
+          <div class="list">
+            <ul id="ul">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="blogs.html">blogs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <div class="login">
+              <button onclick=login() class="Signup">Sing-Up</button>
+              <button onclick=login() class="login">Log-In</button>
+              </div>
+            </ul>
+          </div>
+  
+          <!-- Hamburger -->
+  
+          <!-- <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> -->
+        </nav>
+  
+        <nav>
+          <div class="logo"><img src="logo.png" alt=""></div>
+          <div class="list">
+            <ul id="ul">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="blogs.html">blogs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <div class="lines" onclick=showsidebar()><a href="#">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              </a>
+            </ul>
+        </nav>
+      </div>
+
+      <!-- login modal window -->
+      <div class="flexloginmodal">
+      <div class="loginmodal">
+          <div onclick=closeloginmodal() class="closeloginmodal"><img src="cross.png" alt=""></div>
+          <a href="login.html"><button class="btn1">Login as Doctor</button></a>
+          <a href="login.html"><button class="btn">Login as User</button></a>
+      </div>
+      </div>
+
+      <!-- search box -->
+      <div class="searchbox">
+          <p>Search about any disease below</p>
+          <div class="search-container">
+              <input type="text" id="searchInput" placeholder="search the disease">
+              <button onclick="redirect()" class="search-btn">Search</button>
+          </div>
+      </div>
+
+      <div class="centreall">
+<div class="info-box">
+    <img class="headache-image" src="images/headache.jpeg" alt=" " >
+    <div class="headache-name">headache</div>
+  <div class="Non-Harmfull ">
+     Non-Harmfull and can be cured using home remedies
+  </div>
+  
+    <div class="headache">
+        <span class="info-1">Headache, also known as cephalalgia, is the symptom of pain in the face, head, or neck. It can occur as a migraine, tension-type headache, or cluster headache.There is an increased risk of depression in those with severe headaches.
+
+            Headaches can occur as a result of many conditions. There are a number of different classification systems for headaches. The most well-recognized is that of the International Headache Society, which classifies it into more than 150 types of primary and secondary headaches. Causes of headaches may include dehydration; fatigue; sleep deprivation; stress;the effects of medications (overuse) and recreational drugs, including withdrawal; viral infections; loud noises; head injury; rapid ingestion of a very cold food or beverage; and dental or sinus issues (such as sinusitis).
+            
+            Treatment of a headache depends on the underlying cause, but commonly involves pain medication (especially in case of migraine or cluster headaches).A headache is one of the most commonly experienced of all physical discomforts.
+            
+            About half of adults have a headache in a given year.Tension headaches are the most common,affecting about 1.6 billion people (21.8% of the population) followed by migraine headaches which affect about 848 million (11.7%).Headache is pain in any region of the head. Headaches may occur on one or both sides of the head, be isolated to a certain location, radiate across the head from one point, or have a viselike quality.
+
+            A headache may appear as a sharp pain, a throbbing sensation or a dull ache. Headaches can develop gradually or suddenly, and may last from less than an hour to several days 
+            
+            
+            <span class="info-2"><span class="question"><br>👉causes</br> </span></br>
+
+            <img src="images/dark-dot.jpg"  class="notation">There are more than 200 types of headaches. Some are harmless and some are life-threatening. The description of the headache and findings on neurological examination, determine whether additional tests are needed and what treatment is best.
+
+             Headaches are broadly classified as "primary" or "secondary".Primary headaches are benign, recurrent headaches not caused by underlying disease or structural problems. For example, migraine is a type of primary headache. While primary headaches may cause significant daily pain and disability, they are not dangerous from a physiological point of view. Secondary headaches are caused by an underlying disease, like an infection, head injury, vascular disorders, brain bleed, stomach irritation, or tumors. Secondary headaches can be dangerous. Certain "red flags" or warning signs indicate a secondary headache may be dangerous.Headache pain results from signals interacting among your brain, blood vessels and surrounding nerves. During a headache, multiple mechanisms activate specific nerves that affect muscles and blood vessels. These nerves send pain signals to your brain, causing a headache.</br>
+             
+    
+    
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

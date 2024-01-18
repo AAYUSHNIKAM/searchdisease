@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <link rel="stylesheet" href="astama.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav class="sidebar">
+            <!-- <div class="logo"><img src="logo/logo.png" alt=""></div> -->
+            <div onclick=hidesidebar()><img src="cross.png" alt=""></div>
+            <div class="list">
+                <ul id="ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="login">
+                        <button onclick=login() class="Signup">Sing-Up</button>
+                        <button onclick=login() class="login">Log-In</button>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Hamburger -->
+
+            <!-- <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> -->
+        </nav>
+
+        <nav>
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="list">
+                <ul id="ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="lines" onclick=showsidebar()><a href="#">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                    </div>
+                    </a>
+                </ul>
+        </nav>
+    </div>
+
+    <!-- login modal window -->
+    <div class="flexloginmodal">
+        <div class="loginmodal">
+            <div onclick=closeloginmodal() class="closeloginmodal"><img src="cross.png" alt=""></div>
+            <a href="login.html"><button class="btn1">Login as Doctor</button></a>
+            <a href="login.html"><button class="btn">Login as User</button></a>
+        </div>
+    </div>
+
+    <!-- search box -->
+    <div class="searchbox">
+        <p>Search about any disease below</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="search the disease">
+            <button onclick="redirect()" class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="centreall">
+        <div class="info-box">
+            <img class="astama-image" src="images/astama.jpg" alt=" ">
+            <div class="astama-name">Asthma</div>
+            <div class="Non-Harmfull ">
+                Non-Harmfull and can be cured using home remedies
+            </div>
+
+            <div class="asthama-details">
+                <span class="info-1">Asthma is a long-term inflammatory disease of the airways of the lungs.It is
+                    characterized by variable and recurring symptoms, reversible airflow obstruction, and easily
+                    triggered bronchospasms.Symptoms include episodes of wheezing, coughing, chest tightness,
+                    and shortness of breath.These may occur a few times a day or a few times per week.Depending
+                    on the person, asthma symptoms may become worse at night or with exercise.
+
+                    Asthma is thought to be caused by a combination of genetic and environmental factors.
+                    Environmental factors include exposure to air pollution and allergens.Other potential triggers
+                    include medications such as aspirin and beta blockers.Diagnosis is usually based on the pattern
+                    of symptoms, response to therapy over time, and spirometry lung function testing.Asthma is
+                    classified according to the frequency of symptoms, forced expiratory volume in one second (FEV1),
+                    and peak expiratory flow rate.It may also be classified as atopic or non-atopic, where atopy
+                    refers to a predisposition toward developing a type 1 hypersensitivity reaction.
+
+                    There is no known cure for asthma, but it can be controlled. Symptoms can be prevented by
+                    avoiding triggers, such as allergens and respiratory irritants, and suppressed with the use of
+                    inhaled corticosteroids.Long-acting beta agonists (LABA) or antileukotriene agents may be
+                    used in addition to inhaled corticosteroids if asthma symptoms remain uncontrolled.
+                    Treatment of rapidly worsening symptoms is usually with an inhaled short-acting beta2 agonist such
+                    as salbutamol and corticosteroids taken by mouth.In very severe cases, intravenous
+                    corticosteroids, magnesium sulfate, and hospitalization may be required.
+
+                    In 2019 asthma affected approximately 262 million people and caused approximately 461,000 deaths.
+                    Most of the deaths occurred in the developing world.Asthma often begins in childhood,and the
+                    rates have increased significantly since the 1960s.Asthma was recognized as early as Ancient
+                    Egypt
+                    
+                    
+                    <span class="info-2"><span class="question"><br>👉symptoms</br>
+
+                        </span></br>
+
+
+
+                        <img src="images/dark-dot.jpg" class="notation">Shortness of breath
+                        Chest tightness or pain
+                        Wheezing when exhaling, which is a common sign of asthma in children
+                        Trouble sleeping caused by shortness of breath, coughing or wheezing
+                        Coughing or wheezing attacks that are worsened by a respiratory virus, such as a cold or the flu
+                        </br>
+                        <span class="info-3"><span class="question"><br>👉causes</br></span>
+                            <img src="images/dark-dot.jpg" class="notation">Childhood asthma causes aren't fully understood. Some factors thought to be involved include having:
+
+                            A tendency to develop allergies that runs in the family.
+                            Parents with asthma.
+                            Some types of airway infections at a very young age.
+                            Exposure to environmental factors, such as cigarette smoke or other air pollution.
+                            Increased immune system sensitivity causes the lungs and airways to swell and produce mucus when exposed to certain triggers. Reaction to a trigger can be delayed, making it more difficult to identify the trigger. Triggers vary from child to child and can include:
+                            
+                            Viral infections such as the common cold.
+                            Exposure to air pollutants, such as tobacco smoke.
+                            Allergies to dust mites, pet dander, pollen or mold.
+                            Physical activity.
+                            Weather changes or cold air.
+                            Sometimes, asthma symptoms occur with no apparent triggers.
+                            
+                            
+                            </br>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

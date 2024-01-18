@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <link rel="stylesheet" href="arthritis.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav class="sidebar">
+            <!-- <div class="logo"><img src="logo/logo.png" alt=""></div> -->
+            <div onclick=hidesidebar()><img src="cross.png" alt=""></div>
+            <div class="list">
+                <ul id="ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="login">
+                        <button onclick=login() class="Signup">Sing-Up</button>
+                        <button onclick=login() class="login">Log-In</button>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Hamburger -->
+
+            <!-- <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> -->
+        </nav>
+
+        <nav>
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="list">
+                <ul id="ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="lines" onclick=showsidebar()><a href="#">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                    </div>
+                    </a>
+                </ul>
+        </nav>
+    </div>
+
+    <!-- login modal window -->
+    <div class="flexloginmodal">
+        <div class="loginmodal">
+            <div onclick=closeloginmodal() class="closeloginmodal"><img src="cross.png" alt=""></div>
+            <a href="login.html"><button class="btn1">Login as Doctor</button></a>
+            <a href="login.html"><button class="btn">Login as User</button></a>
+        </div>
+    </div>
+
+    <!-- search box -->
+    <div class="searchbox">
+        <p>Search about any disease below</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="search the disease">
+            <button onclick="redirect()" class="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="centreall">
+        <div class="info-box">
+            <img class="arthritis-image" src="images/coldandflu.jpg" alt=" ">
+            <div class="arthritis-name">Arthritis</div>
+            <div class="Non-Harmfull ">
+                Non-Harmfull and can be cured using home remedies
+            </div>
+
+            <div class="arthritis-details">
+                <span class="info-1">Arthritis is a term often used to mean any disorder that affects joints.
+                    Symptoms generally include joint pain and stiffness. Other symptoms may include redness, warmth,
+                    swelling, and decreased range of motion of the affected joints.In some types of arthritis,
+                    other organs are also affected.Onset can be gradual or sudden.
+
+                    There are over 100 types of arthritis.The most common forms are osteoarthritis
+                    (degenerative joint disease) and rheumatoid arthritis.Osteoarthritis usually occurs with age and
+                    affects the fingers, knees, and hips.Rheumatoid arthritis is an autoimmune disorder that
+                    often affects the hands and feet.[7] Other types include gout, lupus, fibromyalgia, and septic
+                    arthritis.They are all types of rheumatic disease.
+
+                    Treatment may include resting the joint and alternating between applying ice and heat.Weight
+                    loss and exercise may also be useful.Recommended medications may depend on the form of
+                    arthritis. These may include pain medications such as ibuprofen and paracetamol
+                    (acetaminophen).In some circumstances, a joint replacement may be useful.
+
+                    Osteoarthritis affects more than 3.8% of people, while rheumatoid arthritis affects about 0.24% of
+                    people.Gout affects about 1–2% of the Western population at some point in their lives. In
+                    Australia about 15% of people are affected by arthritis,while in the United States more than
+                    20% have a type of arthritis.Overall the disease becomes more common with age.
+                    Arthritis is a common reason that people miss work and can result in a decreased quality of life.
+                    <span class="info-2"><span class="question"><br>👉symptoms</br>
+
+                        </span></br>
+
+
+
+                        <img src="images/dark-dot.jpg" class="notation">Pain, which can vary in severity, is a common
+                        symptom in virtually all types of arthritis.Other symptoms include swelling, joint
+                        stiffness, redness, and aching around the joint(s).Arthritic disorders like lupus and
+                        rheumatoid arthritis can affect other organs in the body, leading to a variety of symptoms.
+                        Symptoms may include:
+
+                        Inability to use the hand or walk
+                        Stiffness in one or more joints
+                        Rash or itch
+                        Malaise and fatigue
+                        Weight loss
+                        Poor sleep
+                        Muscle aches and pains
+                        Tenderness
+                        Difficulty moving the joint
+                        It is common in advanced arthritis for significant secondary changes to occur. For example,
+                        arthritic symptoms might make it difficult for a person to move around and/or exercise, which
+                        can lead to secondary effects, such as:
+
+
+                        Illustration of gout affected foot.
+                        Muscle weakness
+                        Loss of flexibility
+                        Decreased aerobic fitness
+                        </br>
+                        <span class="info-3"><span class="question"><br>👉causes</br></span>
+                            <img src="images/dark-dot.jpg" class="notation">Osteoarthritis happens naturally as you age — a lifetime of using your joints can eventually wear down their cartilage cushioning.
+                            You may develop gout if you have too much uric acid in your blood (hyperuricemia).
+                            Your immune system can cause arthritis (including rheumatoid arthritis) when it damages your joints by mistake.
+                            Certain viral infections (including COVID-19) can trigger viral arthritis.
+                            Sometimes, arthritis happens with no cause or trigger. Providers call this idiopathic arthritis
+                            </br>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
